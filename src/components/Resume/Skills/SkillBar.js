@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const SkillBar = ({ data, categories }) => {
   const { category, competency, title } = data;
+  console.log(categories)
   const titleStyle = {
     background: categories
       .filter((cat) => category.includes(cat.name))

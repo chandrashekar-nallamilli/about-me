@@ -3,51 +3,61 @@ const skills = [
     title: 'Amazon Web Services',
     competency: 4,
     category: ['Cloud', 'Tools'],
+    index: 1,
   },
   {
     title: 'Google Cloud',
     competency: 2,
     category: ['Tools', 'Cloud'],
+    index: 1, 
   },
   {
     title: 'Oracle',
     competency: 2,
     category: ['Tools', 'Cloud'],
+    index: 1,
   },
   {
     title: 'Azure',
     competency: 3,
     category: ['Cloud', 'Tools'],
+    index: 1,
   },
   {
     title: 'Heroku',
     competency: 4,
     category: ['Cloud', 'Tools'],
+    index: 1,
   },
   {
     title: 'Javascript',
     competency: 5,
     category: ['UI', 'Web Development', 'Languages', 'Javascript', 'Backend'],
+    index: 3,
   },
   {
     title: 'TypeScript',
     competency: 5,
     category: ['UI', 'Web Development', 'Languages', 'Javascript', 'Backend'],
+    index: 3,
   },
   {
     title: 'Node.JS',
     competency: 5,
     category: ['Web Development', 'Javascript'],
+    index: 3,
   },
   {
     title: 'React.JS',
     competency: 5,
     category: ['UI', 'Web Development', 'Javascript'],
+    index: 3,
   },
   {
     title: 'Next.JS',
     competency: 4,
     category: ['UI', 'Web Development', 'Javascript'],
+    index: 3,
   },
   {
     title: 'Bash',
@@ -59,36 +69,43 @@ const skills = [
     title: 'MongoDB',
     competency: 3,
     category: ['Web Development', 'Databases'],
+    index: 3,
   },
   {
     title: 'Dynamo DB',
     competency: 3,
     category: ['Web Development', 'Databases'],
+    index: 3,
   },
   {
     title: 'ElasticSearch',
     competency: 4,
     category: ['Web Development', 'Databases'],
+    index: 3,
   },
   {
     title: 'PostgreSQL/SQLite3/Redshift',
     competency: 4,
     category: ['Web Development', 'Databases'],
+    index: 3,
   },
   {
     title: 'Redis',
     competency: 3,
     category: ['Web Development', 'Databases'],
+    index: 3,
   },
   {
     title: 'Express.JS',
     competency: 5,
     category: ['Web Development', 'Javascript'],
+    index: 3,
   },
   {
     title: 'Github',
     competency: 5,
     category: ['Tools', 'Version Control'],
+    
   },
   {
     title: 'BitBucket',
@@ -124,6 +141,7 @@ const skills = [
     title: 'HTML + SASS/SCSS/CSS',
     competency: 3,
     category: ['UI', 'Web Development', 'Languages'],
+    index: 3,
   },
   {
     title: 'Java',
@@ -134,11 +152,6 @@ const skills = [
     title: 'Ruby',
     competency: 2,
     category: ['Languages', 'Backend'],
-  },
-  {
-    title: 'Ruby on Rails',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
   },
   {
     title: '.Net/.Net core',
@@ -154,21 +167,25 @@ const skills = [
     title: 'REST',
     competency: 5,
     category: ['Web Development', 'API'],
+    index: 3,
   },
   {
     title: 'gRPC',
     competency: 3,
     category: ['Web Development', 'API'],
+    index: 3,
   },
   {
     title: 'SOAP',
     competency: 4,
     category: ['Web Development', 'API'],
+    index: 3,
   },
   {
     title: 'GraphQL',
     competency: 4,
     category: ['Web Development', 'API'],
+    index: 3,
   },
   {
     title: 'Terraform',
@@ -237,47 +254,59 @@ const skills = [
   },
   {
     title: "Serverless Architecture",
-  competency: 4,
-    category: ["Software Architecture"]
+    competency: 4,
+    category: ["Software Architecture"],
+    index: 2,
 },
 {
     title: "Microservices Architecture",
     competency: 4,
-    category: ["Software Architecture"]
+    category: ["Software Architecture"],
+    index: 2,
 },
 {
    title:"Event-Driven Architecture",
     competency:4,
-    category:["Software Architecture"] 
+    category:["Software Architecture"],
+    index: 2,
  } ,
  { 
     title:"Monolithic Architecture ", 
      competency: 4, 
-     category:["Software Architecture"] 
+     category:["Software Architecture"],
+     index: 2, 
   },
   { 
     title:"SOA Architecture ", 
      competency: 4, 
-     category:["Software Architecture"] 
+     category:["Software Architecture"],
+     index: 2, 
   },
   { 
     title:"MutiTier Architecture N-Tier ", 
      competency: 2, 
-     category:["Software Architecture"] 
+     category:["Software Architecture"],
+     index: 2, 
   }
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 const colors = [
-  '#6968b3',
-  '#37b1f5',
-  '#40494e',
-  '#515dd4',
-  '#e47272',
-  '#cc7b94',
-  '#3896e2',
-  '#c3423f',
-  '#d75858',
-  '#747fff',
-  '#64cb7b',
+  '#FFF48D',
+  '#FCDD8C',
+  '#F4B33B',
+  '#DEB2FA',
+  '#B2A33F',
+  '#BADAF8',
+  '#C1FDFD',
+  '#D2FCC3',
+  '#ECECEC',
+  '#FFD58D', 
+  '#FCCC8C', 
+  '#F4D33B',  
+  '#DFB2FA',  
+  '#B2B33F',  
+  '#BAEAF8',  
+  '#C1FFFD',   
+  '#D3FCC3'
 ];
 
 const categories = [

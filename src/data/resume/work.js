@@ -107,8 +107,8 @@ const work = [
     name: 'Bank Of America',
     position: 'Financial Federated Database',
     url: 'https://www.bankofamerica.com',
-    startDate: '2011-01-01',
-    endDate: '2014-12-31',
+    startDate: '2008-08-12',
+    endDate: '20140-12-31',
     summary: `FFD is an application in Bank of America which used to handle the financial
     transaction of the bank.`,
     highlights: [
