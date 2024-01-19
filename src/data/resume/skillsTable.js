@@ -48,7 +48,7 @@ const skillsTable = [
     value: "Jest, Mocha, Chai, Jasmine, Selenium, Junit, Nunit",
   },
   {
-    id: "Methdoloiges",
+    id: "Methodologies",
     value: "Agile, Scrum, Kanban, SAFe, DevOps, DevSecops",
   },
 ];
