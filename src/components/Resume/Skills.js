@@ -1,28 +1,34 @@
-'use client'
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+"use client";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-import CategoryButton from './Skills/CategoryButton';
-import SkillBar from './Skills/SkillBar';
+import CategoryButton from "./Skills/CategoryButton";
+import SkillTable from "./Skills/SkillTable";
 
-const Skills = ({ skills, categories }) => {
-  const initialButtons = Object.fromEntries([['All', false]].concat(categories.map(({ name }) => [name, false])));
+const Skills = ({ skills, categories, skillsTable }) => {
+  const initialButtons = Object.fromEntries(
+    [["All", false]].concat(categories.map(({ name }) => [name, false]))
+  );
 
   const [buttons, setButtons] = useState(initialButtons);
 
   const handleChildClick = (label) => {
-    const newButtons = Object.keys(buttons).reduce((obj, key) => ({
-      ...obj,
-      [key]: (label === key) && !buttons[key],
-    }), {});
+    const newButtons = Object.keys(buttons).reduce(
+      (obj, key) => ({
+        ...obj,
+        [key]: label === key && !buttons[key],
+      }),
+      {}
+    );
     newButtons.All = !Object.keys(buttons).some((key) => newButtons[key]);
     setButtons(newButtons);
   };
 
   const getRows = () => {
-    const actCat = Object.keys(buttons).reduce((cat, key) => (
-      buttons[key] ? key : cat
-    ), 'All');
+    const actCat = Object.keys(buttons).reduce(
+      (cat, key) => (buttons[key] ? key : cat),
+      "All"
+    );
 
     const comparator = (a, b) => {
       let ret = 0;
@@ -31,55 +37,58 @@ const Skills = ({ skills, categories }) => {
       else if (a.competency > b.competency) ret = -1;
       else if (a.competency < b.competency) ret = 1;
       else if (a.title > b.title) ret = -1; // switch these two lines
-      else if(a.title < b.title) ret=+1;     // with these two to make title descending.
-       return ret;
+      else if (a.title < b.title) ret = +1; // with these two to make title descending.
+      return ret;
     };
-
-    return skills.sort(comparator).filter((skill) => (actCat === 'All' || skill.category.includes(actCat)))
+    console.log(skills);
+    return skills
+      .sort(comparator)
+      .filter((skill) => actCat === "All" || skill.category.includes(actCat))
       .map((skill) => (
-        <SkillBar
-          categories={categories}
-          data={skill}
-          key={skill.title}
-        />
+        <Skills categories={categories} data={skill} key={skill.title} />
       ));
   };
 
-  const getButtons = () => Object.keys(buttons).map((key) => (
-    <CategoryButton
-      label={key}
-      key={key}
-      active={buttons}
-      handleClick={handleChildClick}
-    />
-  ));
-
+  const getButtons = () =>
+    Object.keys(buttons).map((key) => (
+      <CategoryButton
+        label={key}
+        key={key}
+        active={buttons}
+        handleClick={handleChildClick}
+      />
+    ));
   return (
     <div className="skills">
       <div className="link-to" id="skills" />
       <div className="title">
         <h3>Skills</h3>
-      </div>
-      <div className="skill-button-container">
-        {getButtons()}
-      </div>
-      <div className="skill-row-container">
-        {getRows()}
+        <SkillTable data={skillsTable} />
       </div>
     </div>
   );
 };
 
 Skills.propTypes = {
-  skills: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    competency: PropTypes.number,
-    category: PropTypes.arrayOf(PropTypes.string),
-  })),
-  categories: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    color: PropTypes.string,
-  })),
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      competency: PropTypes.number,
+      category: PropTypes.arrayOf(PropTypes.string),
+    })
+  ),
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      color: PropTypes.string,
+    })
+  ),
+  skillsTable: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      value: PropTypes.string,
+    })
+  ),
 };
 
 Skills.defaultProps = {
