@@ -21,7 +21,7 @@ Delving deeper into coding, customizing my home to become more intuitive about m
 - Online Courses/Webinars/Seminars
 - Customer review analysis for Smart Home products
 - Virtual Reality/Augmented Reality
-- Algorthemic Trading 
+- Algorithemic Trading 
 
 # Travel / Geography
 
