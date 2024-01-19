@@ -17,7 +17,8 @@ const work = [
     position: "Cloud Solution Architect",
     url: "https://tv2.no",
     startDate: "2022-08-01",
-    summary: `As the Solution Architect for Enklere Avikkling, I am at the forefront of a hybrid project that leverages AWS Cloud and on-premise resources with an emphasis on implementing open-source technologies. This initiative aims to enhance sports and news production applications.The system has been designed from scratch under my strategic direction, using TypeScript for backend architecture and Next.js for frontend tasks. To manage communication between these layers, we use WebSockets, TCP, and REST APIs via Socket-IO. Our approach pivots around the integration of open-source technologies in TV production applications - a pioneering direction that I am currently leading within our team.In executing this vision, I ensure our video player orchestrator is hosted on AWS ECS while vital production tools are maintained on reliable on-premise servers. To promote agility and efficiency in our setup, we adhere to DevOps strategies within a stream-aligned framework; here Terraform serves as our Infrastructure as Code (IaC) tool paired with Github Actions managing build processes; all supported by git ops' pull-based strategy for deployments.`,
+    summary: `As the Solution Architect for Enklere Avikkling, I am at the forefront of a hybrid project that leverages AWS Cloud and on-premise resources with an emphasis on implementing open-source technologies. This initiative aims to enhance sports and news production applications.
+    The system has been designed from scratch under my strategic direction, using TypeScript for backend architecture and Next.js for frontend tasks. To manage communication between these layers, we use WebSocket's, TCP, and REST APIs via Socket-IO. Our approach pivots around the integration of open-source technologies in TV production applications - a pioneering direction that I am currently leading within our team. In executing this vision, I ensure our video player orchestrator is hosted on AWS ECS while vital production tools are maintained on reliable on-premise servers. To promote agility and efficiency in our setup, we adhere to DevOps strategies within a stream-aligned framework; here Terraform serves as our Infrastructure as Code (IaC) tool paired with GitHub Actions managing build processes; all supported by git ops' pull-based strategy for deployments.`,
     highlights: [
       "Working closely with the domain architect  for architecting the application.",
       "Spearheaded the migration of on-premise systems and applications to AWS cloud platform ensuring seamless transition and efficient utilization of resources.",
@@ -25,7 +26,7 @@ const work = [
       "Utilizing Free and Open-Source Software (FOSS) architecture where code can be freely accessed, reused, and improved by anyone, facilitating collaboration and leading to more efficient and innovative software solutions.",
       "Employed Serverless architecture where applicable leading to cost efficiency and enhanced scalability for the organization.",
       "Managing security protocols within the cloud space through IAM roles policies ensuring restricted access at all levels.",
-      "Utilizing DevOps principles for continuous integration/continuous deployment (CI/CD) with Terraform as our IaC tool & Github Actions for building processes; promoted agile development practice.",
+      "Utilizing DevOps principles for continuous integration/continuous deployment (CI/CD) with Terraform as our IaC tool & GitHub Actions for building processes; promoted agile development practice.",
       "Performing regular system audits to detect any weaknesses or inefficiencies within our infrastructure setup; monitored application performance using native AWS tools like CloudWatch & X-Ray.",
       "Re-architected engineering hiring and onboarding processes. Helping the developers in the team by advising them in every phase whenever its required.",
       "Pitched, designed, developed, deployed, and maintained TV2 productions landscape.",
@@ -56,7 +57,7 @@ const work = [
     startDate: "2017-02-01",
     endDate: "2022-08-31",
     summary:
-      'As the Senior Engineer and Architect for the Via Live product, I was pivotal in its development using cloud-native architecture on AWS and Azure platforms. Initially constructed using a microservice architecture with .Net core, we transitioned to a serverless model utilizing AWS Lambda, AWS Step Functions and AppSync. Frontend development followed a micro frontend strategy. We upheld a stream-aligned team setup leveraging DevOps principles, Terraform for Infrastructure as Code (IaC), CircleCI as our build tool, and git ops pull-based strategy for deployments.The prodcut is used by some large key players like <a href=" https://olympics.com/en/work-with-us">Olympicss</a> and <a href="https://www.tv2.no/">TV2 Norge AS</a> in streaming and distrubtion for their live events.',
+      'As the Senior Engineer and Architect for the Via Live product, I was pivotal in its development using cloud-native architecture on AWS and Azure platforms. Initially constructed using a microservice architecture with .Net core, we transitioned to a serverless model utilizing AWS Lambda, AWS Step Functions and AppSync. Frontend development followed a micro frontend strategy. We upheld a stream-aligned team setup leveraging DevOps principles, Terraform for Infrastructure as Code (IaC), CircleCI as our build tool, and git ops pull-based strategy for deployments. The product is used by some large key players like <a href=" https://olympics.com/en/work-with-us">Olympics</a> and <a href="https://www.tv2.no/">TV2 Norge AS</a> in streaming and distribution for their live events.',
     highlights: [
       "Led the product development using .Net Core targeted for Azure deployment. Later, I successfully directed a critical technology transition to AWS, migrating functionalities to leverage AWS Lambda and Step Functions.",
       "Designed micro-service architecture around: data collection, data integrity, feature engineering, research, strategy, backtesting, deployment, and reporting.",
@@ -83,7 +84,7 @@ const work = [
       "Used Comptel Inventory as the base framework for UI to achieve (MVC) Model View Controller.",
       "Responsible for data Migration from legacy systems to Comptel Products Responsible for DB level mapping & ETL operations.",
       "Developed Persistence layer using Hibernate.",
-      "Publsihed Soap & Rest Services for retrieving the Network inventory data to the assurance and building systems",
+      "Published Soap & Rest Services for retrieving the Network inventory data to the assurance and building systems",
       "With Good understanding on Business requirements designed and developed Use case Diagrams and Sequence Diagrams using Enterprise Architect.",
     ],
   },
@@ -98,12 +99,7 @@ const work = [
     Typical services include Project Enrollment, Design and Implementation, Testing,
     Application Deployment and Production activities.`,
     highlights: [
-      "Used Comptel Inventory as the base framework for UI to achieve (MVC) Model View Controller.",
-      "Responsible for data Migration from legacy systems to Comptel Products Responsible for DB level mapping & ETL operations.",
-      "Developed Persistence layer using Hibernate.",
-      "Publsihed Soap & Rest Services for retrieving the Network inventory data to the assurance and building systems",
-      "With Good understanding on Business requirements designed and developed Use case Diagrams and Sequence Diagrams using Enterprise Architect.",
-      "Devloped User Interface using Servlets, JSP’s, JSTL and business driven reusable custom tag libraries.",
+      "Developed User Interface using Servlets, JSP’s, JSTL and business driven reusable custom tag libraries.",
       "Developed Presentation layer JDBC, Hibernate, Spring, JPA to persist and to make the business transactions durable.",
       "Developed Service Layer using JMS, EJB, Spring IOC, Spring AOP, and Web Services under the guidelines of Service Oriented Architecture.",
       "Developed Asynchronous messaging component using JMS Point-to-point messaging domain and published it as MDB.",
@@ -120,17 +116,6 @@ const work = [
     summary: `FFD is an application in Bank of America which used to handle the financial
     transaction of the bank.`,
     highlights: [
-      "Used Comptel Inventory as the base framework for UI to achieve (MVC) Model View Controller.",
-      "Responsible for data Migration from legacy systems to Comptel Products Responsible for DB level mapping & ETL operations.",
-      "Developed Persistence layer using Hibernate.",
-      "Publsihed Soap & Rest Services for retrieving the Network inventory data to the assurance and building systems",
-      "With Good understanding on Business requirements designed and developed Use case Diagrams and Sequence Diagrams using Enterprise Architect.",
-      "Devloped User Interface using Servlets, JSP’s, JSTL and business driven reusable custom tag libraries.",
-      "Developed Presentation layer JDBC, Hibernate, Spring, JPA to persist and to make the business transactions durable.",
-      "Developed Service Layer using JMS, EJB, Spring IOC, Spring AOP, and Web Services under the guidelines of Service Oriented Architecture.",
-      "Developed Asynchronous messaging component using JMS Point-to-point messaging domain and published it as MDB.",
-      "Leveraged the IOC concepts of Spring framework to integrate Struts based user interface with Hibernate based persistence interface.",
-      "Software Development is driven by inverted V model designed Use case diagrams, Class diagrams, and Sequence diagrams using UML and developed using Java JEE components.",
       "Developed and implemented 3-Tier Architecture using Struts in UI, Spring and EJB for server side and Hibernate for communicating with the Database.",
       "Developed reusable Custom tag libraries for Mortgage module and published them to be consumed.",
       "Developed presentation views in JSP, Struts Tag libs and Struts Tiles for consistent presentation for FFD Applications.",
