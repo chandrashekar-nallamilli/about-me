@@ -8,10 +8,6 @@ const skillsTable = [
     value: "Microservices, Serverless, Event Driven, Monolith",
   },
   {
-    id: "JavaScript Frameworks",
-    value: "React, Next Js, React Native",
-  },
-  {
     id: "FrontEnd Js Frameworks",
     value: "React, Next Js, React Native",
   },
